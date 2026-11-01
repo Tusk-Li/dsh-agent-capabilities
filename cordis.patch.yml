@@ -1,0 +1,6 @@
+- insert:
+    - id: agent-capabilities
+      name: dsh-agent-capabilities
+      config:
+        enableBrowser: false
+        enableDesktop: false

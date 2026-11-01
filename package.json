@@ -1,0 +1,22 @@
+{
+  "name": "dsh-agent-capabilities",
+  "version": "1.0.0",
+  "description": "Portable DSH skills for configurable image APIs and interactive charts, with optional official browser and desktop providers.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": { ".": "./index.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg", "./package.json": "./package.json" },
+  "files": ["index.js", "cordis.patch.yml", "locale", "icon.svg", "skills", "README.md", "LICENSE"],
+  "engines": { "node": ">=24" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "dependencies": {
+    "@deepseek-ai/dsh-skill-filesystem": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-browser-use": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-experimental-browser-use-playwright-mcp": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-computer-use": "0.2.1-rc.5",
+    "@deepseek-ai/dsh-experimental-computer-use-cua-driver-native": "0.2.1-rc.5"
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.0.5" },
+  "scripts": { "test": "node --test tests/*.test.mjs", "test:python": "python -m unittest discover -s tests -p test_*.py -v" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "image-generation", "visualization"]
+}

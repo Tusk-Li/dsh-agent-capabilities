@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.dsh/
+generated-images/
+*.tgz
+coverage/
+*.log

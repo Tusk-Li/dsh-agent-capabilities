@@ -1,0 +1,8 @@
+{
+  "generationUrl": "",
+  "editUrl": "",
+  "model": "",
+  "apiKeyEnv": "DSH_IMAGE_API_KEY",
+  "requestOptions": { "response_format": "b64_json" },
+  "timeoutSeconds": 180
+}
